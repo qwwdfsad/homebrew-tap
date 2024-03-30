@@ -11,7 +11,8 @@ brew install async-profiler
 
 ### async-profiler
 
-Formula for the binary installation of [async-profiler](https://github.com/async-profiler/async-profiler).
+Formula for the binary installation of [async-profiler](https://github.com/async-profiler/async-profiler)
+that adds `asprof` to the corresponding `*/bin/*` and provides a convenience wrapper over `converter.jar`.
 
 Installation:
 ```
