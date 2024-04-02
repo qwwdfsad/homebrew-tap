@@ -19,7 +19,7 @@ class AsyncProfiler < Formula
   def caveats
     <<~EOS
       In order to use async-profiler with JMH as '-prof async', append the following to your shell profile (~/.bashrc or ~/.zshrc):
-      $ echo 'export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:#{libexec}/lib/libasyncProfiler.dylib' >> ~/.zshrc
+      $ echo 'export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:#{libexec}/lib/' >> ~/.zshrc
     EOS
   end
 
