@@ -7,6 +7,7 @@ Usage:
 ```bash
 brew tap qwwdfsad/tap
 brew install async-profiler
+brew install hsdis
 ```
 
 ### async-profiler
@@ -29,3 +30,18 @@ Additionaly, formula installs `libasyncProfiler.dylib` into Homebrew prefix (`$H
 
 To further use `async-profiler` with JMH's [`-prof async`](https://github.com/openjdk/jmh/blob/641f0480632f47e0dbdbf454105bbda550dd5eb7/jmh-core/src/main/java/org/openjdk/jmh/profile/AsyncProfiler.java#L65) seamlessly,
 consider adding the installed `dylib` into `DYLD_LIBRARY_PATH`. The brew installation will hint you on that.
+
+### hsdis
+
+Formula for the installation of hsdis -- [Hotspot disassembly library](https://blogs.oracle.com/javamagazine/post/java-hotspot-hsdis-disassembler) for Java.
+
+The formula builds it from OpenJDK sources against Capstone with the [effortless-hsdis](https://github.com/qwwdfsad/effortless-hsdis)
+and installs the hsdis dylib into Homebrew keg.
+
+The installer will give you a hint what to do next:
+```
+hsdis was installed into /opt/homebrew/opt/hsdis/libexec/lib/hsdis-aarch64.dylib
+In order to make it locateable by the JVM, you can either add it to Java's lib folder ($JAVA_HOME/lib/)
+or add a lib path to the $DYLD_LIBRARY_PATH:
+$ echo 'export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/opt/homebrew/opt/hsdis/libexec/lib/' >> ~/.zshrc
+```
