@@ -17,6 +17,7 @@ that adds `asprof` to the corresponding `*/bin/*` and provides a convenience wra
 
 Installation:
 ```
+brew tap qwwdfsad/tap
 brew install async-profiler
 ```
 
@@ -33,7 +34,11 @@ consider adding the installed `dylib` into `DYLD_LIBRARY_PATH`. The brew install
 
 ### hsdis
 
-Formula for the installation of hsdis -- [Hotspot disassembly library](https://blogs.oracle.com/javamagazine/post/java-hotspot-hsdis-disassembler) for Java.
+Formula for the installation of hsdis -- [Hotspot disassembly library](https://blogs.oracle.com/javamagazine/post/java-hotspot-hsdis-disassembler) for Java:
+```
+brew tap qwwdfsad/tap
+brew install hsdis
+```
 
 The formula builds it from OpenJDK sources against Capstone with the [effortless-hsdis](https://github.com/qwwdfsad/effortless-hsdis)
 and installs the hsdis dylib into Homebrew keg.
