@@ -32,6 +32,17 @@ Additionaly, formula installs `libasyncProfiler.dylib` into Homebrew prefix (`$H
 To further use `async-profiler` with JMH's [`-prof async`](https://github.com/openjdk/jmh/blob/641f0480632f47e0dbdbf454105bbda550dd5eb7/jmh-core/src/main/java/org/openjdk/jmh/profile/AsyncProfiler.java#L65) seamlessly,
 consider adding the installed `dylib` into `DYLD_LIBRARY_PATH`. The brew installation will hint you on that.
 
+### Amper
+
+Formula for the binary installation of the standalone [Amper](https://github.com/JetBrains/amper/) to make it globally-available and upgradeable:
+
+```
+brew tap qwwdfsad/tap
+brew install amper
+
+amper --help
+```
+
 ### hsdis
 
 Formula for the installation of hsdis -- [Hotspot disassembly library](https://blogs.oracle.com/javamagazine/post/java-hotspot-hsdis-disassembler) for Java:
