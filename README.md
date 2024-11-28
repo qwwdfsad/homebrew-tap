@@ -61,3 +61,6 @@ In order to make it locateable by the JVM, you can either add it to Java's lib f
 or add a lib path to the $DYLD_LIBRARY_PATH:
 $ echo 'export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/opt/homebrew/opt/hsdis/libexec/lib/' >> ~/.zshrc
 ```
+
+<!--- development flow comment: you need brew install --build-from-source ./<formula-name>.rb  -->
+
