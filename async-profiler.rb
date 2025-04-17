@@ -2,9 +2,9 @@ class AsyncProfiler < Formula
   desc "A low overhead sampling profiler for Java applications"
   homepage "https://github.com/jvm-profiling-tools/async-profiler"
   license "Apache-2.0"
-  url "https://github.com/async-profiler/async-profiler/releases/download/v3.0/async-profiler-3.0-macos.zip"
-  sha256 "cae4f207c33b964276385272a7cfe3750594cbcc8918f97a4bb67292bdbc43a8"
-  # version "3.0" -- redundant, won't pass brew --audit
+  url "https://github.com/async-profiler/async-profiler/releases/download/v4.0/async-profiler-4.0-macos.zip"
+  sha256 "1f27e5f5952ec40126a22addad6989bcbeb0509da8a2714ec489953abd698360"
+  # version "4.0" -- redundant, won't pass brew --audit
 
   # depends_on "openjdk@17" Could be the case, but the last thing I want here is to mess with other people JDKs
 
