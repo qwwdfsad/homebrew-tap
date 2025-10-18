@@ -62,5 +62,8 @@ or add a lib path to the $DYLD_LIBRARY_PATH:
 $ echo 'export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/opt/homebrew/opt/hsdis/libexec/lib/' >> ~/.zshrc
 ```
 
-<!--- development flow comment: you need brew install --build-from-source ./<formula-name>.rb  -->
+<!--- development flow comment: 
+Go to Library/Taps/qwwdfsad/homebrew-tap
+ln -s /Users/qwwdfsad/workspace/homebrew-tap/Formula/amper.rb   amper.rb
+-->
 

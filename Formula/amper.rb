@@ -2,16 +2,16 @@ class Amper < Formula
   desc "A project configuration and build tool with a focus on the user experience and the IDE support"
   homepage "https://github.com/JetBrains/amper/"
   license "Apache-2.0"
-  url "https://packages.jetbrains.team/maven/p/amper/amper/org/jetbrains/amper/cli/0.7.0/cli-0.7.0-wrapper?download=true"
-  sha256 "0788b201e2b62555c3024775f6ae9046712ff8d9a07aae3fe705277e9691fe6f"
-  version "0.6.0"
+  url "https://packages.jetbrains.team/maven/p/amper/amper/org/jetbrains/amper/cli/0.8.0/cli-0.8.0-wrapper?download=true"
+  sha256 "30affa4d8dfa6ba4f037dec84cb4277f38cfc2d0e1521f413278430eb172f4b7"
+  version "0.8.0"
 
   depends_on "kdoctor"
 
   def install
     libexec.install Dir["*"]
-    bin.install_symlink "#{libexec}/cli-0.7.0-wrapper" => "amper"
-    chmod "+x", "#{libexec}/cli-0.7.0-wrapper"
+    bin.install_symlink "#{libexec}/cli-0.8.0-wrapper" => "amper"
+    chmod "+x", "#{libexec}/cli-0.8.0-wrapper"
   end
 
   def caveats
