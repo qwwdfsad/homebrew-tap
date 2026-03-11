@@ -2,13 +2,15 @@ class Hsdis < Formula
   desc "An OpenJDK hotspot disassembly library package"
   homepage "https://github.com/openjdk/jdk/tree/master/src/utils/hsdis"
   license "The Universal Permissive License (UPL)"
-  sha256 "9db89ef5c6e08d07aaaf4a1f66ce4211c9931e28a6066e474db84e52eccf1cb5"
-  url "https://github.com/qwwdfsad/effortless-hsdis/archive/refs/tags/v0.1.zip"
+  sha256 "8e605a5b1e0af300740b64114841670271b002014800fa688a0a1f05e793ade2"
+  url "https://github.com/qwwdfsad/effortless-hsdis/archive/refs/tags/v0.2.zip"
 
+  depends_on "capstone"
   depends_on "cmake" => :build
+  depends_on "pkgconf" => :build
 
   def install
-    system "cmake", "-S", ".", "-B", "build", *std_cmake_args(install_prefix: libexec)
+    system "cmake", "-S", ".", "-B", "build", "-DUSE_SYSTEM_CAPSTONE=ON", *std_cmake_args(install_prefix: libexec)
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
     system "ls", "-l", "build"

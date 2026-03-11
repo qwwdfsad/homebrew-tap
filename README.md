@@ -64,6 +64,6 @@ $ echo 'export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/opt/homebrew/opt/hsdis/libe
 
 <!--- development flow comment: 
 Go to Library/Taps/qwwdfsad/homebrew-tap
-ln -s /Users/qwwdfsad/workspace/homebrew-tap/Formula/amper.rb   amper.rb
+ln -s /Users/qwwdfsad/workspace/homebrew-tap/Formula/amper.rb amper.rb
 -->
 
