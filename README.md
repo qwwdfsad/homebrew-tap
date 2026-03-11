@@ -5,9 +5,8 @@ Small Homebrew tap for Java-related profiling tools.
 Usage:
 
 ```bash
-brew tap qwwdfsad/tap
-brew install async-profiler
-brew install hsdis
+brew install qwwdfsad/tap/async-profiler
+brew install qwwdfsad/tap/hsdis
 ```
 
 ### async-profiler
@@ -17,8 +16,7 @@ that adds `asprof` to the corresponding `*/bin/*` and provides a convenience wra
 
 Installation:
 ```
-brew tap qwwdfsad/tap
-brew install async-profiler
+brew install qwwdfsad/tap/async-profiler
 ```
 
 Usage:
@@ -37,8 +35,7 @@ consider adding the installed `dylib` into `DYLD_LIBRARY_PATH`. The brew install
 Formula for the binary installation of the standalone [Amper](https://github.com/JetBrains/amper/) to make it globally-available and upgradeable:
 
 ```
-brew tap qwwdfsad/tap
-brew install amper
+brew install qwwdfsad/tap/amper
 
 amper --help
 ```
@@ -47,8 +44,7 @@ amper --help
 
 Formula for the installation of hsdis -- [Hotspot disassembly library](https://blogs.oracle.com/javamagazine/post/java-hotspot-hsdis-disassembler) for Java:
 ```
-brew tap qwwdfsad/tap
-brew install hsdis
+brew install qwwdfsad/tap/hsdis
 ```
 
 The formula builds it from OpenJDK sources against Capstone with the [effortless-hsdis](https://github.com/qwwdfsad/effortless-hsdis)
@@ -66,4 +62,3 @@ $ echo 'export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/opt/homebrew/opt/hsdis/libe
 Go to Library/Taps/qwwdfsad/homebrew-tap
 ln -s /Users/qwwdfsad/workspace/homebrew-tap/Formula/amper.rb amper.rb
 -->
-
